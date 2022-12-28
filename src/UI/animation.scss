@@ -1,0 +1,16 @@
+@keyframes fade {
+
+    0%,
+    20%,
+    100% {
+        filter: blur(0px);
+        opacity: 1;
+    }
+
+    40%,
+    80% {
+        filter: blur(16px);
+        opacity: 0;
+    }
+
+}

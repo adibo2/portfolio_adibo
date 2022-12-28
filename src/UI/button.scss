@@ -1,0 +1,80 @@
+.btn {
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: transform .2s;
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-top: 10rem;
+
+    cursor: pointer;
+    color: #252525;
+    transform: translateY(-10px);
+    //change buttoon
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    animation: mymove 5s infinite;
+
+
+}
+
+.btn:hover {
+    transform: translateY(-18px);
+    box-shadow: 0px 10px 25px 0px rgba(73, 215, 92,.4);
+    background: #49D75C;
+    border: 0px solid #49D75C;
+
+    
+    box-shadow: 0 20px 30px rgba(0, 0, 0, .2);
+}
+
+.btn:active {
+    transform: translateY(-13px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+
+}
+
+.btn-white {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #252525;
+    background-color: #fff;
+
+
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    /* after a cote du parent*/
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    transition: background-color .2s;
+
+}
+
+.btn-white::after {
+    background-color: #fff;
+   
+}
+
+.btn:hover::after {
+    transform: scaleX(1.7) scaleY(1.9);
+    opacity: 0;
+    background: #49D75C;
+}
+
+.btn-animated {
+    animation: movebottom .9s ease-out .95s;
+    animation-fill-mode: backwards;
+    /* 0% will start before animation .75 animation delay */
+}
+
+  

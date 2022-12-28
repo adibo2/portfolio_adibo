@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200&family=Dancing+Script:wght@700&family=Poppins&display=swap');
+$facebook-color: #3b5998;
+$twitter-color: #55acee;
+$google-color: #dd4b39;
+$linkedin-color: #0976b4;
+$pinterest-color: #cb2027;
+$behance-color: #1769ff;
+$github-color: #4183c4;
+$youtube-color:#bb0000;
+$soundcloud-color:#ff3a00;
+@import "./../respon.scss";
+
+.header{
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    display: grid;
+    padding: 4rem;
+    grid-template-columns: minmax(6rem,1fr) repeat(10,minmax(min-content,10rem)) minmax(6rem,1fr) ;
+    row-gap: 1rem;
+    margin-top: 10rem;
+
+    column-gap: 3rem;
+    // background-image: linear-gradient(to right bottom, #374b3e, #1dd195bd);
+
+
+   
+    @include respons(small){
+      row-gap: 4rem;
+      column-gap: 0rem;
+
+
+    }
+     
+    &__text{
+        grid-column: 1/6;
+        font-size: 1.8rem;
+
+        font-family: 'Poppins', sans-serif;
+        padding: 2rem;
+       
+        margin: 0 auto;
+        color: #fff;
+        @include respons(small){
+          grid-column: 1/-1;
+          justify-self: start;
+          align-self: center;
+          margin: 0;
+        }
+        & h1{
+          clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+          transform: translateY(100px);
+
+
+
+        }
+       
+        &--id{
+            position: absolute;
+            font-size: 3rem;
+            font-weight: 600;
+            letter-spacing: 12px;
+            animation: fade 20s ease-in-out infinite;
+            &:nth-child(1) {
+                animation-delay: -20s;
+            }
+    
+            &:nth-child(2) {
+                animation-delay: -14.667s;
+            }
+            &:nth-child(3) {
+                animation-delay: -7.333s;
+            }
+   
+    
+
+        }
+
+
+    }
+    &__picture{
+        grid-column: 8/13;
+        color: #fff;
+        @include respons(small){
+          grid-column: 3/11;
+        }
+        & img{
+            width: 100%;
+            
+        }
+    }
+    &__scroll{
+        grid-area: 5/6;
+        grid-row: 3/4;
+        justify-self: end;
+        @include respons(phone){
+          grid-column: 7/8;
+          grid-row: 4/5;
+          justify-self: start;
+          
+
+
+        }
+        
+    }
+}
+.header__socials{
+    grid-column: 6/8;
+    justify-self: start;
+    display: flex;
+    gap: 2rem;
+}
+.social-icon {
+    margin-bottom: 15px;
+    border-radius: 138px;
+    border: 5px solid;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    line-height: 1px;
+    padding-top: 11px;
+    transition: all 0.5s;
+    &:hover {
+      transform: rotate(360deg)scale(1.3);
+    }
+    &.linkedin {
+        font-size: 24px;
+        padding-top: 8px;
+        padding-left: 1px;
+        background-color: $linkedin-color;
+        color: #ffffff;
+        border-color: $linkedin-color;
+        &:hover {
+          background-color: #ffffff;
+          color: $linkedin-color;
+        }
+      }
+      &.codepen {
+        font-size: 22px;
+        padding-top: 9px;
+        background-color: $pinterest-color;
+        color: #ffffff;
+        border-color: $pinterest-color;
+        &:hover {
+          background-color: #ffffff;
+          color: $pinterest-color;
+        }
+      }
+      &.github {
+        font-size: 22px;
+        padding-top: 9px;
+        background-color: $github-color;
+        color: #ffffff;
+        border-color: $github-color;
+        &:hover {
+          background-color: #ffffff;
+          color: $github-color;
+        }
+      }
+}
+// .header__socials-active{
+//     display: flex;
+//     flex-direction: column;
+//     gap: 2rem;
+//     grid-area: auto / 1 / auto / 3;
+//     position: fixed;
+//     margin-left: 22rem;
+
+// }
+.grid{
+
+}
+.btnanim{
+  color: rgba(255, 103, 68, 0.91);
+  border: 2px solid rgba(255, 103, 68, 0.91) !important;
+  background-color: inherit;
+  margin-top: 10rem;
+  font-size: 1em;
+  opacity: 0;
+line-height: normal;
+text-transform: uppercase;
+font-family: 'Lato', sans-serif;
+font-weight: 900;
+letter-spacing: 0;
+border-radius: 45px;
+height: auto;
+padding: .8em 2.1em;
+cursor: pointer;
+transition: all .3s ease-in-out, color 0.2s 0.3s;
+&:hover{
+  cursor: pointer;
+padding: .8em 2.7em;
+background-color: rgba(255, 103, 68, 0.91) !important;
+color: #fff;
+}
+}

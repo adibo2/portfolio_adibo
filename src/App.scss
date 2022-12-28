@@ -1,0 +1,15 @@
+@import "./respon.scss";
+.container{
+    display: grid;
+    grid-template-columns: minmax(6rem,1fr) repeat(12,minmax(min-content,15rem)) minmax(6rem,1fr) ;
+    grid-template-rows:10vh 20vh 40vw 80vw repeat(2,min-content);
+    row-gap: 2rem;
+    @include respons(small){
+        display: grid;
+        // grid-template-rows:4vh calc(100vh - 24rem); 
+        grid-template-rows:6rem calc(100vh - 6rem); 
+
+        //new line realtors and header all page //kml b min-content ola automatique placement
+      } 
+}
+
