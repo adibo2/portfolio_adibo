@@ -31,7 +31,7 @@ const Skills = (props) => {
           trigger: ".skills",
           start: "0% 60%",
           end:"top 30%",
-          markers: true,
+          markers: false,
           toggleActions: "play none none none", 
         }})
         // .to(".skills h1", { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', y:0, duration: 1}, "-=2.9")
