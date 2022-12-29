@@ -108,23 +108,23 @@ export const data_projet=[
     id:'x2',
     bgUrl:estate,
     title:' React real estate',
-    descp:'A small app to train my react and scss.',
+    descp:'A small app that present real estate and train my react and scss.',
     href:"https://github.com/adibo2/react_houses",
     hrefdemo:"https://react-houses.vercel.app"
 },
 {
     id:'x3',
     bgUrl:bnb,
-    title:' React  delivery',
-    descp:'ADD a new meal or choose our avaible meals with different recipes.',
+    title:'Adib Bnb',
+    descp:'An app that present Airbnb and user can search different town avaible in the app.',
     href:"https://github.com/adibo2/Adib_bnb",
     hrefdemo:"https://adib-bnb.vercel.app/"
 },
 {
 id:'x1',
 bgUrl:ecom,
-title:' React food delivery',
-descp:'ADD a new meal or choose our avaible meals with different recipes.',
+title:'Instant keys',
+descp:'Ecommerce website that sell digital product (Windows keys or Office).',
 href:"https://github.com/adibo2/ecom_adibo",
 hrefdemo:"https://ecom-adibo2.vercel.app/"
 },
