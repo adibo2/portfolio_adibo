@@ -5,6 +5,7 @@ import { useEffect, useLayoutEffect } from "react";
 import { data_front } from "../data/data";
 import { data_back } from "../data/data";
 import gif5 from "./../img/5.gif"
+import { Zoom } from "react-awesome-reveal";
 
 import { gsap } from "gsap";
 
@@ -25,6 +26,11 @@ const Skills = (props) => {
           },
         })
         // .to(".skills h1", { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', y:0, duration: 1}, "-=2.9")
+        .from(".p__skills",{
+          opacity: 0,
+          duration: 2,
+
+        })
         .to(".skills h1", {
           clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
           y: 0,
@@ -71,7 +77,10 @@ const Skills = (props) => {
     <div className="skills" id="skill">
 
       <div className="what_ido">
+        <Zoom>
+
         <h2 className="section-header">What I do</h2>
+        </Zoom>
         <p className="p__skills">Web Developer who wants to explore every tech stack</p>
 
         <h1 className="skills-fronth1">Front end</h1>

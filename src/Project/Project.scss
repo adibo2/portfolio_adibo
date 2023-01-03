@@ -4,7 +4,7 @@
     // background-color: aquamarine;
     grid-row: 5/6;
     grid-column: 4/12;
-    margin: 28rem 0;
+    margin: 47rem 0;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(39rem, min-content));
     column-gap: 4rem;
@@ -228,8 +228,8 @@
     text-align: center;
     margin: 0 auto;
     padding: 40px 0;
-    font-family:'Oswald', sans-serif;
-    font-size: 2rem;
+    font-family:'Oswald', sans-serif !important;
+    font-size: 5rem;
     font-weight: 200;
     color: #fff;
     text-transform: uppercase;

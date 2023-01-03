@@ -4,8 +4,9 @@ import { useEffect } from "react";
 import p1 from "./../img/projet2.png";
 import { data_projet } from "../data/data";
 import { data_rick } from "../data/data";
-import Zoom from "react-reveal/Zoom";
-import Fade from "react-reveal/Fade";
+// import Zoom from "react-reveal/Zoom";
+import { Fade } from "react-awesome-reveal";
+import { Zoom } from "react-awesome-reveal";
 
 const Project = () => {
   // useEffect(()=>{
@@ -35,8 +36,8 @@ const Project = () => {
   return (
     <>
       <div className="section-header">
-        <Zoom>
-          <h2>Projects</h2>
+        <Zoom triggerOnce={true}>
+          <h2 className="section-header">Projects</h2>
         </Zoom>
       </div>
 
@@ -61,7 +62,7 @@ const Project = () => {
             </div>
           </div>
         ))} */}
-        <Fade top>
+        <Fade cascade damping={0.1}>
 
         {data_projet.map((projet) => (
           <div

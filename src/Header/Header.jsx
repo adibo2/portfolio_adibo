@@ -87,7 +87,7 @@ const Header = () => {
           <h2 className='header__text--id'>backend developer</h2>
           <h2 className='header__text--id'>Problem solving</h2>
           <a
-           href="/assets/CV_Adib_Bensmina.pdf"
+           href="/assets/CV__Adib_Bensmina.pdf"
            download="CV_Adib_Bensmina.pdf"
           >
 
