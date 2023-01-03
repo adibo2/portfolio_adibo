@@ -1,10 +1,7 @@
 import React from "react";
 import "./Project.scss";
-import { useEffect } from "react";
-import p1 from "./../img/projet2.png";
+
 import { data_projet } from "../data/data";
-import { data_rick } from "../data/data";
-// import Zoom from "react-reveal/Zoom";
 import { Fade } from "react-awesome-reveal";
 import { Zoom } from "react-awesome-reveal";
 
