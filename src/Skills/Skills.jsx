@@ -28,7 +28,7 @@ const Skills = (props) => {
         // .to(".skills h1", { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', y:0, duration: 1}, "-=2.9")
         .from(".p__skills",{
           opacity: 0,
-          duration: 2,
+          duration: .5,
 
         })
         .to(".skills h1", {
