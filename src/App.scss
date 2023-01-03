@@ -2,7 +2,7 @@
 .container{
     display: grid;
     grid-template-columns: minmax(6rem,1fr) repeat(12,minmax(min-content,15rem)) minmax(6rem,1fr) ;
-    grid-template-rows:10vh 20vh 40vw 80vw repeat(2,min-content);
+    grid-template-rows:10vh 20vh 40vw 80vw repeat(3,min-content);
     row-gap: 2rem;
     @include respons(small){
         display: grid;

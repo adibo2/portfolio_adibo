@@ -77,7 +77,7 @@ const Skills = (props) => {
     <div className="skills" id="skill">
 
       <div className="what_ido">
-        <Zoom>
+        <Zoom triggerOnce={true}>
 
         <h2 className="section-header">What I do</h2>
         </Zoom>

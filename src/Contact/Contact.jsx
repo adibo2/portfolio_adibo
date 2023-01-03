@@ -7,7 +7,7 @@ const Contact = () => {
     <>
     <div className='contact' id='contact'>
 
-<Zoom>
+<Zoom triggerOnce={true}>
   <h1 className="section-top">Contact</h1>
 
 </Zoom>
