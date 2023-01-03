@@ -18,18 +18,21 @@
   
  
   
-  .section-header {
+  .section-top {
     text-align: center;
     margin: 0 auto;
     padding: 40px 0;
-    font: 300 60px 'Oswald', sans-serif;
+    padding: 40px 0;
+    font-family:'Oswald', sans-serif;
+    font-size: 5rem;
+    font-weight: 200;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 6px;
   }
   
   .btno {
-    margin-top: 13rem;
+    // margin-top: 13rem;
     background: #49D75C;
     border: 0px solid #49D75C;
     border-radius: 35px;

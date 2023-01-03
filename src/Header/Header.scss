@@ -15,12 +15,14 @@ $soundcloud-color:#ff3a00;
     grid-column: 1/-1;
     grid-row: 2/3;
     display: grid;
-    padding: 4rem;
-    grid-template-columns: minmax(6rem,1fr) repeat(10,minmax(min-content,10rem)) minmax(6rem,1fr) ;
+    padding-right: 4rem;
+    padding-left: 4rem;
+    grid-template-columns: minmax(6rem,1fr) repeat(10,minmax(min-content,12rem)) minmax(6rem,1fr) ;
     row-gap: 1rem;
-    margin-top: 10rem;
+    margin-top: 0rem;
+    align-items: center;
 
-    column-gap: 3rem;
+    column-gap: 0rem;
     // background-image: linear-gradient(to right bottom, #374b3e, #1dd195bd);
 
 
@@ -81,18 +83,28 @@ $soundcloud-color:#ff3a00;
     &__picture{
         grid-column: 8/13;
         color: #fff;
+        align-self: center;
+        position: relative;
         @include respons(small){
           grid-column: 3/11;
         }
         & img{
-            width: 100%;
+          width: 500px; 
+          @include respons(small){
+            width: 400px;
+          }
+          @include respons(phone){
+            display: none;
+          }
+          
+          
             
         }
     }
     &__scroll{
-        grid-area: 5/6;
+        grid-column: 6/7;
         grid-row: 3/4;
-        justify-self: end;
+        justify-self:end;
         @include respons(phone){
           grid-column: 7/8;
           grid-row: 4/5;
@@ -109,6 +121,7 @@ $soundcloud-color:#ff3a00;
     justify-self: start;
     display: flex;
     gap: 2rem;
+    padding-left: 1.5rem;
 }
 .social-icon {
     margin-bottom: 15px;

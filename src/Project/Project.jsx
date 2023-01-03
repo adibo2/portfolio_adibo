@@ -4,9 +4,8 @@ import { useEffect } from "react";
 import p1 from "./../img/projet2.png";
 import { data_projet } from "../data/data";
 import { data_rick } from "../data/data";
-import eye from "./../img/eye.png"
-import morty from "./../img/morty.jpg";
-import rick from "./../img/rick.png";
+import Zoom from "react-reveal/Zoom";
+import Fade from "react-reveal/Fade";
 
 const Project = () => {
   // useEffect(()=>{
@@ -35,57 +34,60 @@ const Project = () => {
   // }
   return (
     <>
-    
-    
-    <h2 class="section-header">Projects</h2>
-    <div className="project">
+      <div className="section-header">
+        <Zoom>
+          <h2>Projects</h2>
+        </Zoom>
+      </div>
 
-          <div className="card__image">
-            <img id="anchor" className="card__image-rick" src={rick}></img>
-            
-            <div className="eyes">
-              {/* <img className="eyes__1" src={eye}></img>
-              <img className="eyes__2" src={eye}></img>
-               */}
+      <div className="project">
+        {/* {data_rick.map((rick) => (
+          <div
+            className="card"
+            key={rick.id}
+            style={{ backgroundImage: `url(${rick.bgUrl})` }}
+          >
+            <div className="card-content">
+              <div className="card-title">{rick.title}</div>
+              <p className="card-p">{rick.descp}</p>
+              <div className="card-flex">
+                <a href="#" className="card-btn">
+                  Demo
+                </a>
+                <a href="#" className="card-btn">
+                  Code
+                </a>
+              </div>
             </div>
           </div>
-      {data_rick.map((rick) => (
-        <div className="card" key={rick.id} style={{ backgroundImage: `url(${rick.bgUrl})` }}>
-          <div className="card-content">
-            <div className="card-title">{rick.title}</div>
-            <p className="card-p">{rick.descp}</p>
-            <div className="card-flex">
-              <a href="#" className="card-btn">
-                Demo
-              </a>
-              <a href="#" className="card-btn">
-                Code
-              </a>
-            </div>
-          </div>
-        </div>
-      ))}
+        ))} */}
+        <Fade top>
 
-      {data_projet.map((projet) => (
-        <div
-          className="card" key={projet.id}
-          style={{ backgroundImage: `url(${projet.bgUrl})` }}
-        >
-          <div className="card-content">
-            <div className="card-title">{projet.title}</div>
-            <p className="card-p">{projet.descp}</p>
-            <div className="card-flex">
-              <a href={projet.hrefdemo} className="card-btn" target="blank">
-                Demo
-              </a>
-              <a href={projet.href} className="card-btn" target="blank">
-                Code
-              </a>
+        {data_projet.map((projet) => (
+          <div
+            className="card"
+            key={projet.id}
+            style={{ backgroundImage: `url(${projet.bgUrl})` }}
+          >
+            <div className="card-content">
+              <div className="card-title">{projet.title}</div>
+              <p className="card-p">{projet.descp}</p>
+              <div className="card-flex">
+                <a href={projet.hrefdemo} className="card-btn" target="blank">
+                  Demo
+                </a>
+                <a href={projet.href} className="card-btn" target="blank">
+                  Code
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
-    </div>
+          
+        ))}
+
+        </Fade>
+
+      </div>
     </>
   );
 };

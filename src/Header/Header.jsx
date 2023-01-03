@@ -8,6 +8,7 @@ import { useEffect,useLayoutEffect } from 'react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Navbar from '../Navbar/Navbar';
 import "./../UI/button.scss"
+import headergif from "./../img/6.gif"
 
 
 import {TextPlugin} from "gsap/TextPlugin";
@@ -99,9 +100,8 @@ const Header = () => {
 
       </div>
       <div className='header__picture'>
-        <img src={dev}></img>
-     
-      
+        <img src={headergif}></img>
+
       </div>
 
       <div className='header__socials'>

@@ -3,14 +3,15 @@
 .project{
     // background-color: aquamarine;
     grid-row: 5/6;
-    grid-column: 2/14;
-    margin: 21rem 0;
+    grid-column: 4/12;
+    margin: 28rem 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(28rem, min-content));
+    grid-template-columns: repeat(auto-fit, minmax(39rem, min-content));
     column-gap: 4rem;
-    row-gap: 3rem;
+    row-gap: 4rem;
     justify-content: center;
     position: relative;
+ 
 
     @include respons(phone){
         grid-column: 1/-1;
@@ -220,7 +221,7 @@
 }
 .section-header {
     grid-column: 7/9;
-    grid-row: 6/7;
+    grid-row: 5/6;
     // margin-bottom: 20rem;
     justify-content: center;
     margin-bottom: 12rem;
@@ -228,8 +229,15 @@
     margin: 0 auto;
     padding: 40px 0;
     font-family:'Oswald', sans-serif;
-    font-size: 5rem;
+    font-size: 2rem;
+    font-weight: 200;
     color: #fff;
     text-transform: uppercase;
     letter-spacing: 6px;
+    margin: 10rem 0;
+    @include respons(phone){
+        grid-row: 6/7;
+
+
+    }
   }
