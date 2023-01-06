@@ -7,7 +7,7 @@
     @include respons(small){
         display: grid;
         // grid-template-rows:4vh calc(100vh - 24rem); 
-        grid-template-rows:6rem calc(100vh - 6rem); 
+        grid-template-rows:10rem calc(100vh - 120rem); 
 
         //new line realtors and header all page //kml b min-content ola automatique placement
       } 
