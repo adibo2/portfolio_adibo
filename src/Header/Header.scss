@@ -49,6 +49,7 @@ $soundcloud-color:#ff3a00;
           align-self: center;
           margin: 0;
         }
+
         & h1{
           clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
           transform: translateY(100px);
@@ -200,7 +201,11 @@ border-radius: 45px;
 height: auto;
 padding: .8em 2.1em;
 cursor: pointer;
+
 transition: all .3s ease-in-out, color 0.2s 0.3s;
+@include respons(phone){
+  margin-top: 17rem;
+}
 &:hover{
   cursor: pointer;
 padding: .8em 2.7em;
