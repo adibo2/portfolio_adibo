@@ -118,7 +118,7 @@ export const data_projet=[
     title:'Adib Bnb',
     descp:'An app that present Airbnb and user can search different town with some filters avaible in the app.',
     href:"https://github.com/adibo2/Adib_bnb",
-    hrefdemo:"https://adib-bnb.vercel.app/"
+    hrefdemo:"https://adib-bnb-9mdo.vercel.app"
 },
 {
 id:'x1',

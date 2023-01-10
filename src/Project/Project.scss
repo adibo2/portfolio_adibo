@@ -104,6 +104,7 @@
     &-p{
         color: rgb(255, 255, 255,0.85);
         font-size: 1.2rem;
+        letter-spacing: 0rem;
     }
     &-btn{
         cursor: pointer;
@@ -233,7 +234,7 @@
     font-weight: 200;
     color: #fff;
     text-transform: uppercase;
-    letter-spacing: 6px;
+    // letter-spacing: 6px;
     margin: 10rem 0;
     @include respons(phone){
         grid-row: 6/7;
