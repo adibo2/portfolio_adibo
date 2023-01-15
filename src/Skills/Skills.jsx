@@ -125,7 +125,7 @@ const Skills = (props) => {
         </div>
       </div>
 
-      <div >
+      <div className="gifskill" >
         <img src={gif5} className="skills_gif"></img>
 
       </div>

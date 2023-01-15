@@ -113,7 +113,7 @@ margin-right: auto;
                 font-size: 1.6rem;
                 // color: #191c29;
                 margin-top: 2rem;
-                color: #515151;
+                color: #aca0a0;
             }
 
         }
@@ -141,6 +141,7 @@ margin-right: auto;
   }
   .skills_gif{
     width: 600px;
+    
     @include respons(medium){
         width: 500px;
 
@@ -157,5 +158,8 @@ margin-right: auto;
     }
     
 
+  }
+  .gifskill{
+    margin-top: 10rem;
   }
   
