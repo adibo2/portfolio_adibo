@@ -66,7 +66,7 @@ const Navbar = () => {
         </ul>
       <LinkS to='contact' className='nav__wrap-right'  smooth={true} spy={true} offset={-150} duration={1500}>
         <button className='nav__wrap-right-btn'>
-          <span>
+          <span className='spanbtn'>
           contact
 
           </span>
