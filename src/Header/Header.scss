@@ -64,6 +64,13 @@ $soundcloud-color:#ff3a00;
             font-weight: 600;
             letter-spacing: 12px;
             animation: fade 20s ease-in-out infinite;
+            @include respons(small){
+              letter-spacing: 5px;
+              font-size: 2rem;
+
+
+            
+            }
             &:nth-child(1) {
                 animation-delay: -20s;
             }
