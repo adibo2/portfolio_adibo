@@ -41,12 +41,12 @@
         transform: translateY(-1em);
         font-size: 3rem;
         font-family: 'Times New Roman', Times, serif;
-        margin-top: 6rem;
+        margin-top: 7rem;
         // color: rgb(0, 0, 0);
 
 
         @include respons(small){
-            margin-top: 15rem;
+            margin-top: 10rem;
         }
     }
 
@@ -54,7 +54,7 @@
         margin-top: 10rem;
     }
     &-front{
-        margin-top: 5rem;
+        margin-top: 4rem;
         display: grid;
         justify-content: center;
         grid-template-columns: repeat(auto-fit, minmax(8rem, min-content));
