@@ -1,8 +1,5 @@
 @import "./../respon.scss";
 .nav{
-   
-    
-
     &__wrap{
         display: flex;
         position: fixed;
@@ -99,7 +96,7 @@
                 }
                 @include respons(medium){
                     width: 21rem;
-                    height: 14rem;
+                    height: 12rem;
                     
                 }
                 @include respons(small){
