@@ -29,13 +29,13 @@ const Skills = (props) => {
         // .to(".skills h1", { clipPath: 'polygon(0 0, 100% 0, 100% 100%, 0 100%)', y:0, duration: 1}, "-=2.9")
         .from(".p__skills",{
           opacity: 0,
-          duration: .5,
+          duration: .2,
 
         })
         .to(".skills h1", {
           clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
           y: 0,
-          duration: 0.5,
+          duration: 0.2,
         })
         .to(".skills h1", {
           clipPath: "polygon(0 0, 100% 0, 100% 0, 0 0)",
@@ -51,12 +51,12 @@ const Skills = (props) => {
           y: 0,
           stagger: 0.3,
           opacity: 1,
-          duration: 0.5,
+          duration: 0.2,
         })
         .from(".skills_gif",{
           opacity: 0,
           y:100,
-          duration: 0.5,
+          duration: 0.2,
         })
       // ScrollTrigger.create({
       //   trigger: ".skills h1",

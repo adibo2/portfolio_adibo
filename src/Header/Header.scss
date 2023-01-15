@@ -204,7 +204,7 @@ cursor: pointer;
 
 transition: all .3s ease-in-out, color 0.2s 0.3s;
 @include respons(small){
-  margin-top: 17rem;
+  margin-top: 10rem;
 }
 &:hover{
   cursor: pointer;
