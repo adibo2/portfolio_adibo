@@ -3,7 +3,7 @@
     grid-column: 1/-1;
     grid-row: 4/5;
     background-size: cover;
-    margin-top: 10rem;
+    margin-top: 5rem;
     display: flex;
     justify-content: space-around;
     padding: 20px 20px;
@@ -13,9 +13,24 @@
     // &>* {
     //     transform: skewY(7deg);
     // }
+    @include respons(medium){
+        grid-row: 4/5;
+        margin-top: 105rem;
+        
+        flex-direction: column;
+    }
+    @include respons(small){
+        grid-column: 1/-1;
+        grid-row: 4/5;
+        margin-top: 105rem;
+        
+        flex-direction: column;
+    }
     @include respons(phone){
         grid-column: 1/-1;
-        grid-row: 5/6;
+        grid-row: 4/5;
+        margin-top: 105rem;
+        
         flex-direction: column;
     }
     h1{
@@ -36,7 +51,7 @@
     }
 
     &-back{
-        margin-top: 15rem;
+        margin-top: 10rem;
     }
     &-front{
         margin-top: 5rem;
@@ -89,6 +104,7 @@
                 width: 5rem; /* 80px */
                 // width: 100%;
                 margin-left: auto;
+                border-radius: .5rem;
 margin-right: auto;
                 height: 60%;
             }
@@ -103,15 +119,15 @@ margin-right: auto;
         }
     }
 }
-.section-header {
+.section-header1 {
     text-align: center;
     margin: 0 auto;
-    padding: 40px 10px;
+    padding: 20px 10px;
     font-family:'Oswald', sans-serif;
     font-size: 5rem;
     color: #fff;
     text-transform: uppercase;
-    // letter-spacing: 6px;
+    letter-spacing: 6px;
   }
   .p__skills{
     color: rgb(155, 148, 140);

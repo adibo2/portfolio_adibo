@@ -9,6 +9,7 @@ import { Route,Routes } from 'react-router-dom';
 import Contact from './Contact/Contact'
 import Project from './Project/Project'
 import Footer from './Footer/Footer'
+import { Zoom } from 'react-awesome-reveal'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
     <div className="container">
       <Header></Header>
       <Skills></Skills>
+  
       <Project></Project>
       <Contact></Contact>
       <Footer></Footer>

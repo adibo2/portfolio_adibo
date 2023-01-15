@@ -14,7 +14,10 @@ import p1 from "./../img/projet2.png"
 import estate from "./../img/estate.png";
 import bnb from "./../img/adibbnb.png"
 import ecom from "./../img/ecom.png";
-
+import kuberetes from "./../img/kubernetes.png"
+import docker from "./../img/docker_logo.webp"
+import postman from "./../img/postman.jpg"
+import git from "./../img/git.png"
 
 
 
@@ -58,6 +61,36 @@ export const data_front=[
 
 
 ]
+export const data_tool=[
+    {
+        id:'e3',
+        img:docker,
+        title:'Docker',
+        style:"0px 1px 0px 1px #0ea5e9"
+    
+    },
+    {
+        id:'e3',
+        img:kuberetes,
+        title:'Kubernetes',
+        style:"0px 1px 0px 1px #0369a1"
+    
+    },
+    {
+        id:'e3',
+        img:git,
+        title:'Git',
+        style:"0px 1px 0px 1px #991b1b"
+    
+    },
+    {
+        id:'e3',
+        img:postman,
+        title:'Postman',
+        style:"0px 1px 0px 1px #d97706"
+    
+    }
+    ]
 export const data_back=[
     {
         id:'e3',
@@ -129,6 +162,7 @@ href:"https://github.com/adibo2/ecom_adibo",
 hrefdemo:"https://ecom-adibo2.vercel.app/"
 },
 ]
+
 export const data_rick=[
 
 ]

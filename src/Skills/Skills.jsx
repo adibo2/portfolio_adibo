@@ -4,6 +4,7 @@ import "./Skill.scss";
 import { useEffect, useLayoutEffect } from "react";
 import { data_front } from "../data/data";
 import { data_back } from "../data/data";
+import {data_tool} from "../data/data";
 import gif5 from "./../img/5.gif"
 import { Zoom } from "react-awesome-reveal";
 
@@ -79,7 +80,7 @@ const Skills = (props) => {
       <div className="what_ido">
         <Zoom triggerOnce={true}>
 
-        <h2 className="section-header">What I do</h2>
+        <h2 className="section-header1">What I do</h2>
         </Zoom>
         <p className="p__skills">Web Developer who wants to explore every tech stack</p>
 
@@ -106,6 +107,19 @@ const Skills = (props) => {
             >
               <img src={back.img}></img>
               <h3>{back.title}</h3>
+            </div>
+          ))}
+        </div>
+        <h1 className="skills-back">Tools</h1>
+        <div className="skills-front">
+          {data_tool.map((tool) => (
+            <div
+              className="skills-front-comp"
+              style={{ boxShadow: tool.style }}
+              key={tool.id}
+            >
+              <img src={tool.img}></img>
+              <h3>{tool.title}</h3>
             </div>
           ))}
         </div>

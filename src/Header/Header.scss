@@ -18,9 +18,9 @@ $soundcloud-color:#ff3a00;
     padding-right: 4rem;
     padding-left: 4rem;
     grid-template-columns: minmax(6rem,1fr) repeat(10,minmax(min-content,12rem)) minmax(6rem,1fr) ;
-    row-gap: 1rem;
     margin-top: 0rem;
     align-items: center;
+    row-gap: 1rem;
 
     column-gap: 0rem;
     // background-image: linear-gradient(to right bottom, #374b3e, #1dd195bd);
@@ -106,7 +106,7 @@ $soundcloud-color:#ff3a00;
         grid-column: 6/7;
         grid-row: 3/4;
         justify-self:end;
-        @include respons(phone){
+        @include respons(small){
           grid-column: 7/8;
           grid-row: 4/5;
           justify-self: start;
@@ -203,7 +203,7 @@ padding: .8em 2.1em;
 cursor: pointer;
 
 transition: all .3s ease-in-out, color 0.2s 0.3s;
-@include respons(phone){
+@include respons(small){
   margin-top: 17rem;
 }
 &:hover{

@@ -32,33 +32,10 @@ const Project = () => {
   // }
   return (
     <>
-      <div className="section-header">
-        <Zoom triggerOnce={true}>
-          <h2 className="section-header">Projects</h2>
-        </Zoom>
-      </div>
+
 
       <div className="project">
-        {/* {data_rick.map((rick) => (
-          <div
-            className="card"
-            key={rick.id}
-            style={{ backgroundImage: `url(${rick.bgUrl})` }}
-          >
-            <div className="card-content">
-              <div className="card-title">{rick.title}</div>
-              <p className="card-p">{rick.descp}</p>
-              <div className="card-flex">
-                <a href="#" className="card-btn">
-                  Demo
-                </a>
-                <a href="#" className="card-btn">
-                  Code
-                </a>
-              </div>
-            </div>
-          </div>
-        ))} */}
+       
         <Fade cascade damping={0.1}>
 
         {data_projet.map((projet) => (
