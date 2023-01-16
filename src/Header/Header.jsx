@@ -18,7 +18,15 @@ gsap.registerPlugin(ScrollTrigger)
 
 const Header = () => {
 
+
   const component=useRef();
+  const handleClick = () => {
+    // Trigger the download
+    const link = document.createElement('a');
+    link.href = '/assets/CV__Adib__Bensmina.pdf';
+    link.download = 'CV__Adib__Bensmina.pdf';
+    link.click();
+  };
   useLayoutEffect(() => {
     const headings = gsap.utils.toArray(".second-section-titles");
     
@@ -31,15 +39,6 @@ const Header = () => {
       .to(".header__text button",{opacity:1})
       
     });
-    // ScrollTrigger.create({
-    //   trigger:'.',
-    //   start:'30% 20%',
-    //   end:800,
-    //   markers:false,
-    //   toggleClass:{targets:".nav__wrap",className:"nav-active"},
-    
-
-    // })  
     ScrollTrigger.create({
       trigger:'.header',
       // start:'30% 20%',
@@ -53,12 +52,7 @@ const Header = () => {
         scale:1.2,
     
       })
-
-    
-
-    })
-  
-       
+    })   
         // toggleClass:  "header__socials-active",
    
     return () => ctx.revert(); 
@@ -86,16 +80,14 @@ const Header = () => {
           <h2 className='header__text--id'>Frontend developer</h2>
           <h2 className='header__text--id'>backend developer</h2>
           <h2 className='header__text--id'>Problem solving</h2>
-          <a
+          {/* <a
            href="/assets/CV_Adib_Bensmina.pdf"
            download="CV_Adib_Bensmina.pdf"
-          >
+          > */}
 
 
-          <button 
-         
-          className="btnanim">Downoald CV</button>
-          </a>
+          <button onClick={handleClick} className="btnanim">Downoald CV</button>
+          {/* </a> */}
           </div> 
 
       </div>
