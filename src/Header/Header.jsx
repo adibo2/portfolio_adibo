@@ -9,7 +9,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Navbar from "../Navbar/Navbar";
 import "./../UI/button.scss";
 import headergif from "./../img/6.gif";
-import resume from "./../CV__Adib__Bensmina.pdf";
+import resume from "./../CV_Adib_Bensmina-en.pdf";
 
 import { TextPlugin } from "gsap/TextPlugin";
 
@@ -93,7 +93,7 @@ const Header = () => {
            download="CV_Adib_Bensmina.pdf"
           > */}
 
-            <a href={resume} download="CV__Adib__Bensmina.pdf">
+            <a href={resume} download="CV_Adib_Bensmina-en.pdf">
               <button className="btnanim">
                 Downoald CV
               </button>
